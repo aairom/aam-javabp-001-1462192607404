@@ -51,7 +51,7 @@ public class ResourceServlet {
 		String idString = id == null ? null : id.toString();
 		JsonObject resultObject = create(db, idString, name, value, null, null);
 
-		System.out.println("Create Successful.");
+		System.out.println("Create Successful (aam).");
 
 		return Response.ok(resultObject.toString()).build();
 	}
@@ -273,7 +273,7 @@ public class ResourceServlet {
 		String value = "List of sample files";
 
 		// create a new document
-		System.out.println("Creating new document with id : " + id);
+		System.out.println("Creating new document with id (aam): " + id);
 		Map<String, Object> data = new HashMap<String, Object>();
 		data.put("name", name);
 		data.put("_id", id + "");
